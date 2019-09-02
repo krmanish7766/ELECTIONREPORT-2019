@@ -23,16 +23,16 @@ class state
 	      Class.forName("com.mysql.cj.jdbc.Driver");
 
 	      //STEP 3: Open a connection
-	      System.out.println("Connecting to database...");
+	     // System.out.println("Connecting to database...");
 	      conn = DriverManager.getConnection(DB_URL,USER,PASS);
-	      /////////
-	      System.out.println("Inserting records into the table...");
+		   
+	     // System.out.println("Inserting records into the table...");
 	      //stmt = conn.createStatement();
 	      //String delete = "delete from election2019";
     	  //stmt.executeUpdate(delete);
 		int no_of_cons[]={25,2,14,40,2,26,10,4,6,28,20,29,48,2,2,1,1,21,13,25,1,29,2,80,42,11,14,5,17};
 		String name_of_state[]={"Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Goa","Gujrat","Harayana","Himachal Pradesh","Jammu and Kashmir","Karnataka","Kerala","Madhya Pradesh","Maharastra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Tripura","Uttar Pradesh","West Bengal","Chhattisgarh","Jharkhand","Uttarakhand","Telangana"};
-		/*int statecode,con_code,i1=0,j1,k1;
+		int statecode,con_code,i1=0,j1,k1;
 		String constituencyname = null;
 		for(statecode = 1;statecode <= 29;statecode++)
 		{
@@ -257,7 +257,7 @@ class state
 		        }
 			    i2=0;
 			 }
-		}//end of ut*/
+		}//end of ut
 		//MAXIMUM NUMBER OF VOTES
 		System.out.println("WHO HAS GOT MAXIMUM NUMBER OF VOTES IN LOK SABHA ELEETION 2019");
 		stmt2 = conn.createStatement();
